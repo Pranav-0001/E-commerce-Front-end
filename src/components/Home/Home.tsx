@@ -21,7 +21,7 @@ const Home = () => {
           <FontAwesomeIcon onClick={()=>navigate('/products')} icon={faSearch} className='text-gray-500 text-xl'/>
         </div>
         
-      </div>
+      </div> 
       {isSuggesionOpen&&<SuggestionBox/>}
 
     </div>

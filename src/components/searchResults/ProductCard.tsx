@@ -25,7 +25,7 @@ const ProductCard: React.FC<{ product: Product, setProduct: Function, products: 
         <div className='w-full  '>
             <div className="relative flex justify-end bg-black h-80 bg-no-repeat bg-center bg-cover " style={{ backgroundImage: `url(${product.image})` }}>
                 {product.inWishlist ? <FontAwesomeIcon onClick={() => removeFromWishList(product.name)} className='text-lg text-red-600 cursor-pointer relative top-4 right-4' icon={heartFill} /> : <FontAwesomeIcon onClick={() => addToWishList(product.name)} className='text-lg text-white cursor-pointer relative top-4 right-4' icon={faHeart} />}
-                <div className='absolute bottom-0 w-full h-full opacity-0 hover:opacity-100 bg-transparent'>
+                <div className='absolute bottom-0 w-full h-72  opacity-0 hover:opacity-100 bg-transparent'>
                     <div className=' absolute bottom-0 w-full h-14 bg-violet-500 opacity-90 flex justify-center items-center text-white'>
                         <h1 >View Product</h1>
                     </div>
