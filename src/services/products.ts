@@ -14,8 +14,10 @@ const getProducts = () :Product  => {
         price: productPrice,
         description: productDescription,
         image: imageUrl,
-        rating: productRating,
-        brand:brandName
+        rating: new Array(productRating).fill(0),
+        brand:brandName,
+        inWishlist:false
+
     };
     return product
 }
@@ -32,6 +34,14 @@ export const popular=()=>{
     let products:string[]=[]
     for(let i=0;i<5;i++){
         products.push(getProducts().name)
+    }
+    return products
+}
+
+export const results=()=>{
+    let products:Product[]=[]
+    for(let i=0;i<8;i++){
+        products.push(getProducts())
     }
     return products
 }

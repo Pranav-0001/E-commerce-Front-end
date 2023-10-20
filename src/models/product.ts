@@ -3,6 +3,7 @@ export interface Product {
     price: string;
     description: string;
     image: string;
-    rating: number;
+    rating: number[];
     brand:string;
+    inWishlist:boolean;
   }
